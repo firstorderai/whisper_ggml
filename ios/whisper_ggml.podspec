@@ -21,7 +21,7 @@ A new Flutter FFI plugin project.
     :git => 'https://github.com/sk3llo/whisper_ggml'
   }
   s.source_files = 'Classes/**/*.{cpp,c}'
-  #s.private_header_files = 'Classes/**/*.{h,hpp}'
+  s.private_header_files = 'Classes/**/*.{h,hpp}'
   s.platform = :ios, '15.6'
   s.ios.deployment_target  = '15.6'
 
@@ -32,7 +32,7 @@ A new Flutter FFI plugin project.
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386',
-    'HEADER_SEARCH_PATHS' => "\"#{dart_include}\""
+    'HEADER_SEARCH_PATHS' => "$(inherited) \"#{dart_include}\""
   }
   s.swift_version = '5.0'
 end
