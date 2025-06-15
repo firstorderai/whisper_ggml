@@ -9,7 +9,7 @@
 
 #include "dart_api_dl.h"               /* NOLINT */
 #include "dart_version.h"              /* NOLINT */
-#include "dart_api_dl_impl.h" /* NOLINT */
+#include "include/dart_api_dl_impl.h" /* NOLINT */
 
 #include <stdio.h>
 #include <string.h>
