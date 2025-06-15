@@ -4,7 +4,7 @@
  * BSD-style license that can be found in the LICENSE file.
  */
 
-#include "dart_api_dl.h"               /* NOLINT */
+//#include "dart_api_dl.h"               /* NOLINT */
 #include "dart_version.h"              /* NOLINT */
 #include "dart_api_dl_impl.h" /* NOLINT */
 
