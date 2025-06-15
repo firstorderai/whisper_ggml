@@ -2,8 +2,6 @@ flutter_bin = `which flutter`.strip
 flutter_root = flutter_bin.sub(/\/bin\/flutter$/, '')
 dart_include = File.expand_path("#{flutter_root}/bin/cache/dart-sdk/include")
 
-puts "==> whisper_ggml: Calculated Dart include path: #{dart_include}"
-
 Pod::Spec.new do |s|
   s.name             = 'whisper_ggml'
   s.version          = '1.0.1'
