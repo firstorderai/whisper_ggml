@@ -1,10 +1,13 @@
+#ifndef WHISPER_GGML_DART_API_DL_H_
+#define WHISPER_GGML_DART_API_DL_H_
+
 /*
  * Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
  * for details. All rights reserved. Use of this source code is governed by a
  * BSD-style license that can be found in the LICENSE file.
  */
 
-//#include "dart_api_dl.h"               /* NOLINT */
+#include "dart_api_dl.h"               /* NOLINT */
 #include "dart_version.h"              /* NOLINT */
 #include "dart_api_dl_impl.h" /* NOLINT */
 
@@ -77,3 +80,5 @@ intptr_t Dart_InitializeApiDL(void* data) {
 
     return 0;
 }
+
+#endif  // WHISPER_GGML_DART_API_DL_H_
