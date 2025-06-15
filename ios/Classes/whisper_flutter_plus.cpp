@@ -14,7 +14,7 @@
 #include "json/json.hpp"
 #include <stdio.h>
 
-#include "dart_api_dl.h"
+#include "dart_api_dl_custom.h"
 
 // Receives NativePort ID from Flutter code
 static Dart_Port_DL dart_port = 0;
