@@ -1,3 +1,6 @@
+flutter_root = `flutter --version`.lines.find { _1.include?('Flutter root') }&.split(':')&.last&.strip || '../../../..'
+dart_include = File.expand_path("#{flutter_root}/bin/cache/dart-sdk/include")
+
 Pod::Spec.new do |s|
   s.name             = 'whisper_ggml'
   s.version          = '1.0.1'
@@ -29,6 +32,7 @@ A new Flutter FFI plugin project.
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386',
+    'HEADER_SEARCH_PATHS' => "\"#{dart_include}\""
   }
   s.swift_version = '5.0'
 end
