@@ -196,10 +196,11 @@ packages:
   ffmpeg_kit_flutter_new:
     dependency: "direct main"
     description:
-      name: ffmpeg_kit_flutter_new
-      sha256: dbaf0f4963b08a034a4f787276c1e12efc36a56670693f1721e46f95554f0979
-      url: "https://pub.flutter-io.cn"
-    source: hosted
+      path: "."
+      ref: fix_ios_header_not_found
+      resolved-ref: b32d0d8c94668e22dcc4b33d259c2ce014d862a3
+      url: "https://github.com/firstorderai/ffmpeg_kit_flutter.git"
+    source: git
     version: "1.6.1"
   ffmpeg_kit_flutter_platform_interface:
     dependency: transitive
